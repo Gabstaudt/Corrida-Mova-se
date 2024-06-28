@@ -1,0 +1,197 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTE */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue-Regular.ttf') format('opentype');
+    /* Adicione outros formatos de fonte se necessário */
+}
+
+/* Aplicando a fonte */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    /* Outros estilos */
+}
+
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    max-height: 60px; /* Ajuste o valor conforme necessário */
+    margin-right: 20px;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue'; /* Aplicando a fonte Bebas Neue no título */
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #05a5ea;
+}
+
+/* Estilo da seção hero */
+#hero {
+    background: url('logocorrida.jpg') no-repeat center center/cover;
+    color: #e9e4e5;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:  20px;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#hero .register-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #05a5ea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#hero .button:hover {
+    background-color: #05a5ea;
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo das seções de conteúdo */
+/* Estilo para o título "Sobre a Corrida" */
+#about h2 {
+    color: #dd769b; /* Substitua pela cor desejada */
+}
+
+/* Estilo para o título "Programação" */
+#schedule h2 {
+    color: #dd769b; /* Substitua pela cor desejada */
+}
+
+/* Estilo para o título "Premiações" */
+#register h2 {
+    color: #dd769b; /* Substitua pela cor desejada */
+}
+
+/* Estilo para o título "Contato" */
+#contact h2 {
+    color: #dd769b; /* Substitua pela cor desejada */
+}
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content-section:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+.content-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
